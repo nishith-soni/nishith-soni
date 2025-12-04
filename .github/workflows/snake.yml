@@ -1,14 +1,9 @@
-name: GitHub Snake Game - Dynamic Year
+name: GitHub Snake Game - Full Year
 
 on:
-  # Schedule the workflow to run daily at midnight UTC
   schedule:
     - cron: "0 0 * * *"
-
-  # Allows manually triggering the workflow from the Actions tab
   workflow_dispatch:
-
-  # Trigger the workflow on pushes to the main branch
   push:
     branches:
       - main
@@ -22,17 +17,18 @@ jobs:
       contents: write 
       
     steps:
-      # Step 0: Calculate the Current Year dynamically
-      - name: Set CURRENT_YEAR environment variable
-        id: year_step
-        run: echo "CURRENT_YEAR=$(date +'%Y')" >> $GITHUB_ENV
+      # Step 0: Calculate the date 365 days ago dynamically (YYYY-MM-DD)
+      - name: Set START_DATE environment variable (365 days ago)
+        id: date_step
+        # Calculates the date 365 days ago and formats it as YYYY-MM-DD
+        run: echo "START_DATE=$(date -d '365 days ago' +'%Y-%m-%d')" >> $GITHUB_ENV
         shell: bash
 
-      # Step 1: Checkout the repository
+      # Step 1: Checkout the repository (Keep this)
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Generate the snake animations using the dynamic year
+      # Step 2: Generate the snake animations using the dynamic start date
       - name: Generate GitHub Contributions Snake Animations
         uses: Platane/snk@v3
         with:
@@ -40,14 +36,14 @@ jobs:
 
           # Define the output files and their configurations
           outputs: |
-            # 🟢 DYNAMIC: Use the computed CURRENT_YEAR variable
-            dist/github-snake.svg?year=${{ env.CURRENT_YEAR }}
-            dist/github-snake-dark.svg?year=${{ env.CURRENT_YEAR }}&palette=github-dark
-            dist/ocean.gif?year=${{ env.CURRENT_YEAR }}&color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+            # 🟢 FIX: Use the 'date' parameter to start from 365 days ago
+            dist/github-snake.svg?date=${{ env.START_DATE }}
+            dist/github-snake-dark.svg?date=${{ env.START_DATE }}&palette=github-dark
+            dist/ocean.gif?date=${{ env.START_DATE }}&color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Step 3: Deploy the generated files to the 'output' branch
+      # Step 3: Deploy the generated files to the 'output' branch (Keep this)
       - name: Deploy to Output Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
