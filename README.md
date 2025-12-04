@@ -1,3 +1,4 @@
+<div align="center">
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&color=FFD700&center=true&vCenter=true&width=435&lines=%F0%9F%91%8B+Hi%2C+I'm+Nishith+Soni;a+Full+Stack+Developer;and+a+curious+learner.;" alt="Typing SVG"/>
 </p>
@@ -20,5 +21,7 @@ I am a results-oriented Full Stack Developer committed to accelerating business 
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
+</div>
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
