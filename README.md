@@ -1,6 +1,7 @@
 <div align="center">
-  <img src="./banner.png" alt="Profile" width="100%" height="100%" />
+  <img src="./banner.png" alt="Profile" width="100%" height="300" />
 <br/>
+  
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&color=FFD700&center=true&vCenter=true&width=435&lines=%F0%9F%91%8B+Hi%2C+I'm+Nishith+Soni;a+Full+Stack+Developer;and+a+curious+learner.;" alt="Typing SVG"/>
 
 # 💫 About Me:
