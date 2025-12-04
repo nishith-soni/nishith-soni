@@ -1,8 +1,6 @@
 # 💫 About Me:
 I am a results-oriented Full Stack Engineer committed to accelerating business value by developing robust, secure, and scalable enterprise applications. I thrive in a high-velocity, modern development environment, focusing on end-to-end responsibility, from low-level system design to pixel-perfect user experiences. My passion lies in solving complex architecture challenges and driving technical excellence across the entire software development lifecycle.<br><br>My core technical focus is anchored in the modern tech stack, specializing in Cloud-Native microservices built with Java and Spring Boot, designing and implementing highly efficient RESTful and GraphQL APIs. On the client side, I leverage Angular with TypeScript to deliver dynamic, high-performance Single-Page Applications (SPAs). Furthermore, I possess strong DevOps proficiency, including containerization with Docker and orchestration via Kubernetes, and I actively manage CI/CD Pipelines for automated testing and zero-downtime deployments. I ensure code quality through rigorous unit and integration testing, maintain robust data persistence with PostgreSQL (and NoSQL systems), and rigorously adhere to modern security protocols and clean architecture principles.
 
-![snake gif](https://raw.githubusercontent.com/nishith-soni/nishith-soni/output/github-snake-dark.svg)
-
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=nishith-soni&theme=github_dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=nishith-soni&theme=github_dark&hide_border=false)<br/>
